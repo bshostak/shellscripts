@@ -12,20 +12,12 @@ brew tap homebrew/cask
 
 #Install Programming Languages
 echo "Installing Programming Languages.."
-brew install --cask typescript
 brew install --cask corretto
 
 #Dev Related Tools
 echo "Installing Dev Related Tools..."
 brew install git
 brew install node
-brew install nvm
-#Now set default version
-echo "Setting default node version..."
-echo "Specify which default node version you want:"
-READ version
-nvm install $version
-nvm alias default v$version
 if [ ! -d "/Applications/IntelliJ IDEA.app" ]; then
     brew install --cask intellij-idea
 fi
