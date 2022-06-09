@@ -18,6 +18,9 @@ brew install --cask corretto
 echo "Installing Dev Related Tools..."
 brew install git
 brew install node
+echo "Attempting to install nvm..."
+#This will automatically add to the shell profile after
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 if [ ! -d "/Applications/IntelliJ IDEA.app" ]; then
     brew install --cask intellij-idea
 fi
